@@ -1,0 +1,11 @@
+{% extends "base.html" %} {%block body%}
+<h1>Hi {{user}} !!!</h1>
+<h1>This is Your Profile Page</h1>
+<a href="{%url 'pass_change_with_older'%}" class="btn btn-warning"
+  >Change Password with Older Password</a
+>
+<br />
+<a href="{%url 'pass_change_without_older'%}" class="btn btn-primary mt-3"
+  >Change Password without Older Password</a
+>
+{%endblock%}
